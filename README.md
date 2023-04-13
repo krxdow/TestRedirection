@@ -19,6 +19,7 @@ pages: {
 In oder to have simple example, I don't add a Github provider.
 
 For the moment, I add the callback option to the signin function in my login page.
+But it's not the best solution. because like this login page is not reusable to go to another protected page.
 
 ```html
 // pages/login.vue
