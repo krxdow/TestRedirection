@@ -9,6 +9,4 @@ export default defineNuxtConfig({
     origin: 'http://localhost:3000/',
     basePath: '/api/auth',
   },
-
-  ssr: true,
 });
