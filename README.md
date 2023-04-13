@@ -30,19 +30,13 @@ For the moment, I add the callback option to the signin function in my login pag
 I remind you that by default, without customization, this has the behavior I want
 
 # Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
 ## Setup
-
-Make sure to install the dependencies:
-
 ```bash
 # yarn
 npm install -g yarn
 yarn install
 ```
-
+## Development Server
 ```bash
 npm run dev
 ```
