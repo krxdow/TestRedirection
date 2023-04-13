@@ -11,7 +11,6 @@ export default NuxtAuthHandler({
 
   pages: {
       signIn: '/login',
-
   },
 // @ts-ignore
    // secret: process.env.AUTH_SECRET ?? 'test-123',
