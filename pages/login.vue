@@ -1,10 +1,10 @@
 <template>
     <div>
         <br>
-        <input v-model="username" type="text" placeholder="username (jsmith)">
-        <input v-model="password" type="password" placeholder="password (hunter2)">
+<!--        <input v-model="username" type="text" placeholder="username (jsmith)">
+        <input v-model="password" type="password" placeholder="password (hunter2)">-->
         <br>
-        <button @click="signIn('credentials', {username, password })">
+        <button @click="signIn('credentials', {username:'jsmith', password:'hunter2' ,callbackUrl:'/example'})">
             Sign in with username and password
         </button>
         <br>
@@ -14,7 +14,7 @@
 <script setup lang="ts">
 
 
-const route = useRoute();
+const route = useRouter();
 
 definePageMeta({ auth: false })
 

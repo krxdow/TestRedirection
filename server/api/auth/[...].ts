@@ -2,6 +2,9 @@
 
 import CredentialsProvider from 'next-auth/providers/credentials'
 import {NuxtAuthHandler} from '#auth'
+import {PrismaAdapter} from '@next-auth/prisma-adapter'
+import {PrismaClient}  from "@prisma/client"
+const prisma = new PrismaClient()
 
 
 
@@ -15,9 +18,10 @@ export default NuxtAuthHandler({
 // @ts-ignore
    // secret: process.env.AUTH_SECRET ?? 'test-123',
     secret: useRuntimeConfig().authSecret,
-    providers: [
 
-// @ts-ignore
+  //  adapter: PrismaAdapter(prisma),
+    providers: [
+        // @ts-expect-error You need to use .default here for it to work during SSR. May be fixed via Vite at some point
         CredentialsProvider.default({
             // The name to display on the sign in form (e.g. 'Sign in with...')
             name: 'Credentials',
