@@ -3,4 +3,6 @@
 export default defineNuxtConfig({
   modules: ['@sidebase/nuxt-auth'],
 
+
+
 });

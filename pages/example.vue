@@ -13,7 +13,6 @@ definePageMeta({ auth: false })
 const { getSession, signIn, signOut } = useAuth()
 
 
-
 definePageMeta({
   middleware: 'auth',
 });

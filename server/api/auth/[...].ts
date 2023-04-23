@@ -10,14 +10,22 @@ const prisma = new PrismaClient()
 
 export default NuxtAuthHandler({
     // A secret string you define, to ensure correct encryption
-  //  adapter: PrismaAdapter(prisma),
 
+
+    adapter: PrismaAdapter(prisma),
+
+/*
   pages: {
       signIn: '/login',
   },
-// @ts-ignore
-   // secret: process.env.AUTH_SECRET ?? 'test-123',
-    secret: useRuntimeConfig().authSecret,
+*/
+
+
+
+
+    secret: process.env.AUTH_SECRET ?? 'test-123',
+
+
 
   //  adapter: PrismaAdapter(prisma),
     providers: [
