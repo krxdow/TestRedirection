@@ -3,23 +3,27 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "pnpm dlx prisma generate && nuxt dev ",
+    "dev": "pnpm dlx prisma generate && nuxt dev",
     "dev:preview": "nuxt dev --preview",
     "dev:debug": "nuxt dev --debug",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "migration:generate": "pnpm dlx prisma migrate dev",
-    "migration:reset": "pnpm dlx prisma migrate reset"
+    "migration:reset": "pnpm dlx prisma migrate reset",
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "latest",
+    "@babel/eslint-parser": "^7.21.3",
+    "@nuxt/eslint-config": "^0.1.1",
     "@sidebase/nuxt-auth": "0.6.0-alpha.2",
-    "@types/node": "^18.15.13",
+    "@types/node": "^18.16.0",
     "eslint": "^8.39.0",
     "next-auth": "^4.22.1",
     "nuxt": "^3.4.2",
-    "typescript": "^5.0.4"
+    "ts-essentials": "^9.3.1",
+    "typescript": "^5.0.4",
+    "vue-tsc": "^1.4.4"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.6",

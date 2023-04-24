@@ -3,6 +3,9 @@
 export default defineNuxtConfig({
   modules: ['@sidebase/nuxt-auth'],
 
-
+  auth:{
+    origin:process.env.ORIGIN,
+    basePath:'api/auth'
+  }
 
 });
